@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zed Marketplace - Zambia's Premier E-commerce Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                ZedMarketplace
+            </div>
+            <div class="nav-center">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products, brands, categories...">
+                    <button>
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-store"></i> Sell
+                </a>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </div>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">\ud83d\ude80 Zambia's #1 Online Marketplace</span>
+                <h1>Discover Amazing Products from <span>Zambian Sellers</span></h1>
+                <p>Shop thousands of products from trusted local sellers. Electronics, fashion, home goods, and more - all delivered to your doorstep.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <i class="fas fa-shopping-bag"></i> Shop Now
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-store"></i> Start Selling
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div style="text-align: center; color: white;">
+                        <i class="fas fa-chart-line" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Join 50,000+ Sellers</h3>
+                        <p style="opacity: 0.8;">Start your business journey today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories fade-in">
+        <div class="categories-header">
+            <h2>Browse Categories</h2>
+            <p>Find exactly what you're looking for</p>
+        </div>
+        <div class="category-grid">
+            <div class="category-card" data-category="electronics">
+                <div class="category-icon">
+                    <i class="fas fa-laptop" style="color: var(--primary-color);"></i>
+                </div>
+                <h3>Electronics</h3>
+                <p>1,200+ items</p>
+            </div>
+            <div class="category-card" data-category="fashion">
+                <div class="category-icon">
+                    <i class="fas fa-tshirt" style="color: var(--accent-color);"></i>
+                </div>
+                <h3>Fashion</h3>
+                <p>3,500+ items</p>
+            </div>
+            <div class="category-card" data-category="phones">
+                <div class="category-icon">
+                    <i class="fas fa-mobile-alt" style="color: var(--info-color);"></i>
+                </div>
+                <h3>Phones</h3>
+                <p>800+ items</p>
+            </div>
+            <div class="category-card" data-category="home">
+                <div class="category-icon">
+                    <i class="fas fa-couch" style="color: var(--success-color);"></i>
+                </div>
+                <h3>Home & Furniture</h3>
+                <p>2,100+ items</p>
+            </div>
+            <div class="category-card" data-category="services">
+                <div class="category-icon">
+                    <i class="fas fa-concierge-bell" style="color: var(--warning-color);"></i>
+                </div>
+                <h3>Services</h3>
+                <p>500+ services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products fade-in" id="products">
+        <div class="products-header">
+            <h2>Featured Products</h2>
+            <p>Handpicked deals from top Zambian sellers</p>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically loaded -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ZedMarketplace</h3>
+                <p>Zambia's trusted online marketplace connecting buyers and sellers across the country.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Become a Seller</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</p>
+                <p><i class="fas fa-phone"></i> +260 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> support@zedmarketplace.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zed Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-message">
+            <p style="margin: 0; font-weight: 600;">Added to Cart!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
