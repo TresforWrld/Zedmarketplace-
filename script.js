@@ -50,11 +50,12 @@ function loadProducts() {
         card.className = "product-card";
 
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <div class="product-info">
-                <h3>${product.name}</h3>
-                <p class="price">ZMW ${product.price}</p>
-                <button onclick="addToCart(${product.id})">
+            <img class="product-image" src="${product.image}" alt="${product.name}">
+            <div class="product-content">
+                <p class="product-category">${product.category}</p>
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-price">ZMW ${product.price}</p>
+                <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
                     <i class="fas fa-cart-plus"></i> Add to Cart
                 </button>
             </div>
@@ -72,7 +73,7 @@ function addToCart(productId) {
 
     cart.push(product);
     updateCartBadge();
-    showToast();
+    showToast(product.name);
 }
 
 // ===============================
@@ -85,8 +86,9 @@ function updateCartBadge() {
 // ===============================
 // TOAST NOTIFICATION
 // ===============================
-function showToast() {
+function showToast(productName) {
     const toast = document.getElementById("toast");
+    toast.innerHTML = `<i class="fas fa-check-circle"></i> ${productName} added to cart!`;
     toast.classList.add("show");
 
     setTimeout(() => {
